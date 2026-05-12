@@ -38,6 +38,16 @@ export default function App() {
               }
             />
             <Route
+              path="/dashboard"
+              element={
+                <AuthGuard>
+                  <Layout>
+                    <Dashboard />
+                  </Layout>
+                </AuthGuard>
+              }
+            />
+            <Route
               path="/profile"
               element={
                 <AuthGuard>

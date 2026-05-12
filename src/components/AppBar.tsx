@@ -35,7 +35,7 @@ export function AppBar() {
           Plus
         </Typography>
         <Box sx={{ flexGrow: 1, display: "flex", gap: 1 }}>
-          <Button color="inherit" onClick={() => navigate("/")}>
+          <Button color="inherit" onClick={() => navigate("/dashboard")}>
             Dashboard
           </Button>
           <Button color="inherit" onClick={() => navigate("/profile")}>
